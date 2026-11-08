@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="JavaScript, події, регулярні вирази, форма, таблиця, лабораторна робота 5">
+    <meta name="description" content="Лабораторна робота №5: події JavaScript та регулярні вирази.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хитрук Є.І., група ІА-42, ЛР №5, варіант 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Лабораторна робота №5</h1>
+
+    
+    <section class="task">
+        <h2>Завдання 1. Форма для заповнення</h2>
+
+        <form id="user-form" novalidate>
+            <div class="row" id="row-name">
+                <label for="name">ПІБ</label>
+                <input type="text" id="name" placeholder="Прізвище І.П.  (наприклад: Хитрук Є.І.)">
+            </div>
+            <div class="row" id="row-birth">
+                <label for="birth">Дата народження</label>
+                <input type="text" id="birth" placeholder="Дата народження  (наприклад: 13.05.2007)">
+            </div>
+            <div class="row" id="row-address">
+                <label for="address">Адреса</label>
+                <input type="text" id="address" placeholder="Місто  (наприклад: м. Гайсин)">
+            </div>
+            <div class="row" id="row-email">
+                <label for="email">e-mail</label>
+                <input type="text" id="email" placeholder="Пошта  (наприклад: lizavetahit@gmail.com)">
+            </div>
+            <div class="row" id="row-telegram">
+                <label for="telegram">Telegram</label>
+                <input type="text" id="telegram" placeholder="Телеграм  (наприклад: @liza_hit)">
+            </div>
+
+            <button type="submit">Підтвердити</button>
+        </form>
+
+        <div id="result" class="result" hidden></div>
+    </section>
+
+  
+    <section class="task">
+        <h2>Завдання 2. Таблиця 6×6</h2>
+
+        <p class="hint">
+            Клітинка №6: наведення - випадковий колір, клік - колір із палітри,
+            подвійний клік - зафарбування всіх клітинок від №6 до кінця таблиці.
+        </p>
+
+        <label class="palette">
+            Палітра:
+            <input type="color" id="palette" value="#1e90ff">
+        </label>
+
+        <table id="grid"></table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
